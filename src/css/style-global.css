@@ -111,6 +111,9 @@ a {
     background: rgba(222, 222, 222, 0.3);
 border: 1px solid rgba(255, 255, 255, 0.69);
 border-width: 0px 0px 1px 0px;
+
+-webkit-backdrop-filter: blur(12.5px);
+
 backdrop-filter: blur(12.5px);
 /* Note: backdrop-filter has minimal browser support */
 height: 72px!important;
@@ -219,6 +222,7 @@ transition: all 0.25s;
     transform: translateX(-50%);
     background: rgba(222, 222, 222, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.69);
+    -webkit-backdrop-filter:blur(12.5px);
     backdrop-filter: blur(12.5px);
     padding: 8px;
     border-radius: 50px;
@@ -782,6 +786,7 @@ left: -30px;
 .sez-5-back-glassy {
     background: rgba(222, 222, 222, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.69);
+    -webkit-backdrop-filter: blur(12.5px);
     backdrop-filter: blur(12.5px);
     padding: 50px 80px;
     margin-bottom: 80px;
@@ -1318,6 +1323,7 @@ background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #F9F9F9 100%);
         transform: translateX(-50%);
         background: rgba(222, 222, 222, 0.3);
         border: 1px solid rgba(255, 255, 255, 0.69);
+        -webkit-backdrop-filter:blur(12.5px);
         backdrop-filter: blur(12.5px);
         padding: 8px;
         border-radius: 50px;
@@ -1326,7 +1332,7 @@ background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #F9F9F9 100%);
 
         min-width: 100px;
         width: calc(100vw - 20px);
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .menu-bottom-interno {
@@ -1521,6 +1527,7 @@ display:  none;
         transform: translateX(-50%);
         background: rgba(222, 222, 222, 0.3);
         border: 1px solid rgba(255, 255, 255, 0.69);
+       -webkit-backdrop-filter: blur(12.5px);
         backdrop-filter: blur(12.5px);
         padding: 8px;
         border-radius: 50px;
@@ -1528,7 +1535,7 @@ display:  none;
         flex-direction: row;
         min-width: 100px;
         width: calc(100vw - 20px);
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .menu-bottom-interno {
