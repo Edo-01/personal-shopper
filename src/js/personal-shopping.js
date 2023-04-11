@@ -161,3 +161,45 @@ patLogoFooter.forEach(function(elemento) {
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
+
+
+
+let navMega = document.querySelectorAll('#nav-mega h2');  //tutti i h2 del menu desk 
+let linkMenu = document.querySelectorAll('#nav-mega a'); //tutti gli A del menu desk 
+let paginaCorrente = window.location.href;
+
+console.log(paginaCorrente)
+console.log(linkMenu[6].href)
+
+for (let i = 0; i < navMega.length; i++) {
+  if(paginaCorrente == linkMenu[i].href) {
+    linkMenu[i].classList.add('sottolineaSi');
+    linkMenu[i].classList.remove('sottolineaNo');
+  }
+}  
+
+
+for (let i = 0; i < navMega.length; i++) {
+    navMega[i].addEventListener('mouseover', function(){
+        if(paginaCorrente !== linkMenu[i].href) {
+            linkMenu[i].classList.remove('sottolineaNo');
+            linkMenu[i].classList.add('sottolineaSi');
+        }
+    
+  })
+}                                       
+
+for (let i = 0; i < navMega.length; i++) {
+    navMega[i].addEventListener('mouseout', function(){
+        if(paginaCorrente !== linkMenu[i].href) {
+            linkMenu[i].classList.add('sottolineaNo');
+        }
+      
+   
+    // if(paginaCorrente !== linkMenu[i].href ) {
+    //   linkMenu[i].classList.remove('sottolineaSi');
+    // }
+  })
+}

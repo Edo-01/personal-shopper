@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#313131">
+    <meta name="keywords" content="Rosanna Tesoro, Rosanna, Tesoro, Personal Shopper, Consulente moda, Shopping, Consulente d'immagine, Styling del volto">
+    <meta name="description" content="Consulente d'Immagine, Personal Shopper, Style Coach. Massima professionalità, servizi personalizzati e metodologie esclusive.">
+    <title>Rosanna Tesoro | Personal Shopper</title>
     <link rel="stylesheet" href="src/css/style-global.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Recipe",
+          "name": "Rosanna Tesoro personal shopper",
+          "author": {
+            "@type": "Person",
+            "name": "Rosanna Tesoro"
+          },
+          "description": "Consulente d'Immagine, Personal Shopper, Style Coach. Massima professionalità, servizi personalizzati e metodologie esclusive."
+        }
+        </script>
 </head>
 <body >
 <div class="backgroud-fixed"></div>
 
 <header class="menu-fixed">
     <section id="base-header" class="impagninazione-box-1450 flex-row-space-between section-header impaginazione-base">
-        <div id="logo-header" class="column-20 column-sx visibilita-start"><img src="src/img/logo.svg" alt=""></div>
+        <div id="logo-header" class="column-20 column-sx visibilita-start"><img src="src/img/logo.svg" alt="logo-rosanna-tesoro"></div>
         <div class="column-60">
-            <p id="intestazione-header" class="intestazione-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                tempor incididunt ut labore et dolore magna aliqua</p>
+            <p id="intestazione-header" class="intestazione-header">L’armonia di stile personale e non pre-confezionata dei vari brands e’ la mia continua ricerca.</p>
         </div>
         <div class="column-20 column-dx">
             <div id="apri-drop" class=" botton-hambu visibilita-start"> <!-- trigger apri dropdown -->
@@ -28,7 +42,6 @@
         </div>
     </section>
 </header>
-
 
 
 <section class="impagninazione-box-1450 section-1">
@@ -63,10 +76,11 @@
         <p>MILANO</p>
         <h2>Consulente d'Immagine<br> Personal Shopper<br> Style Coach</h2>
         <h4>Fashon</h4>
-        <p class="max-larghezza">Sono una professionista del settore e una delle pioniere in Italia, ho iniziato nel
-            lontano
-            2004,
-            e ti garantisco la massima professionalità, servizi personalizzati e metodologie esclusive.</p>
+        <p class="max-larghezza">Sono una donna fortuntamente dotata di un occhio attento e di buon gusto. 
+            L’armonia di stile personale e non pre-confezionata dei vari brands e’ la mia continua ricerca.<br> 
+            Il mio obiettivo e’ “spendere il giusto”. Non acquisto un capo solo perche’ mi piace, ma pensando ai vari
+            modi in cui posso utilizzarlo. <br>Questo è per me un divertimento e mi dona serenità. Se hai necessità di ottimizzare il tuo guardaroba, io ci sono!
+        </p>
         <div class="container-button">
             <div class="marquee-bottone" id="botton-home-chi-sono">
                 <div class="marquee-testo-bottone">
@@ -119,22 +133,22 @@
     </div>
 </section>
 <section id="carosello-home-servizi" class="impagninazione-box-1450 section-4">  <!-- carosello -->
-    <div id="servizo-personal-sh" class="section-4-col25">
+    <div name="Personal shopping" id="servizo-personal-sh" class="section-4-col25">
         <h3>01</h3>
         <div class="section4-card-img-1"></div>
         <p>Personal shopping</p>
     </div>
-    <div id="servizio-guardaroba" class="section-4-col25 section4-margin-top">
+    <div name="Styling guardaroba" id="servizio-guardaroba" class="section-4-col25 section4-margin-top">
         <h3>02</h3>
         <div class="section4-card-img-2"></div>
         <p>Styling guardaroba</p>
     </div>
-    <div id="servizio-immagine" class="section-4-col25">
+    <div name="Consulenza d’immagine" id="servizio-immagine" class="section-4-col25">
         <h3>03</h3>
         <div class="section4-card-img-3"></div>
         <p>Consulenza d’immagine</p>
     </div>
-    <div id="servizio-volto" class="section-4-col25 section4-margin-top">
+    <div name="Styling del volto" id="servizio-volto" class="section-4-col25 section4-margin-top">
         <h3>04</h3>
         <div class="section4-card-img-4"></div>
         <p>Styling del volto</p>
@@ -446,19 +460,19 @@
                 <p></p>
             </div>
             <div class="colonna-interna-2">
-                <nav>
-                    <h2><a href="./index.html">HOME</a></h2>
-                    <h2><a href="./about.html">ABOUT</a></h2>
-                    <h2><a href="./servizi/personal-shopping.html">PERSONAL SHOPPING</a></h2>
-                    <h2><a href="./servizi/styling-guardaroba.html">STYLING GUARDAROBA</a></h2>
-                    <h2><a href="./servizi/consulenza-immagine.html">CONSULENZA IMMAGINE</a></h2>
-                    <h2><a href="./servizi/styling-del-volto.html">STYLING DEL VOLTO</a></h2>
-                    <h2><a href="./contatti.html">CONTATTI</a></h2>
+                <nav id="nav-mega">
+                    <h2><a class="sottolineaNo" href="./index.html">HOME</a></h2>
+                    <h2><a class="sottolineaNo" href="./about.html">ABOUT</a></h2>
+                    <h2><a class="sottolineaNo" href="./servizi/personal-shopping.html">PERSONAL SHOPPING</a></h2>
+                    <h2><a class="sottolineaNo" href="./servizi/styling-guardaroba.html">STYLING GUARDAROBA</a></h2>
+                    <h2><a class="sottolineaNo" href="./servizi/consulenza-immagine.html">CONSULENZA IMMAGINE</a></h2>
+                    <h2><a class="sottolineaNo" href="./servizi/styling-del-volto.html">STYLING DEL VOLTO</a></h2>
+                    <h2><a class="sottolineaNo" href="./contatti.html">CONTATTI</a></h2>
                 </nav>
                 <div class="dettagli-contatto-abs">
                    <div class="container-dettagli-contatto">
                     <p>Tel: <a href="tel:+393295675525">+39 329 5675525</a></p>
-                    <p>Email: <a href="mailto:info@rosannatesoro.it">info@rosannatesoro.it</a></p>
+                    <p>Email: <a href="mailto:rosanna.tesoro@virgilio.it">rosanna.tesoro@virgilio.it</a></p>
                     <div class="box-social">
                         <p><a href="http://">Fb</a></p>
                         <p><a href="http://">In</a></p>
