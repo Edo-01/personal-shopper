@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti</title>
     <link rel="stylesheet" href="src/css/style-global.css">
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          grecaptcha.render('html_element', {
+            'sitekey' : '6Le_u4MlAAAAANceX0Ge0htKjPGIMPibHvr4I4n3'
+          });
+        };
+      </script>
+   
 </head>
-<body>
+<body> 
 <div class="backgroud-fixed"></div>
 <header class="menu-fixed">
     <section id="base-header" class="impagninazione-box-1450 flex-row-space-between section-header impaginazione-base">
@@ -37,28 +45,40 @@
              <div class="blocco-telefono">
                 <h3 class="ico-tel">Telefono</h3>
                 <p><a href="tel:+393295675525">+39 329 5675525</a></p>
-                <p><a href="tel:+393295675525">+39 329 5675525</a></p>
+               
              </div>
-             <div class="blocco-email">
+             <!-- <div class="blocco-email">
                 <h3 class="ico-email">Email</h3>
                 <p><a href="mailto:rosanna.tesoro@virgilio.it">rosanna.tesoro@virgilio.it</a></p> 
-                <p><a href="mailto:rosanna.tesoro@virgilio.it">rosanna.tesoro@virgilio.it</a></p>
-             </div>
+                <p><a href="mailto:rosanna.tesoro@virgilio.it">ros</a></p>
+             </div> -->
           </div>
           <div class="block-contatti-colonna">
             <div class="blocco-telefono">
-                <h3 class="ico-adress">Indirizzo</h3>
-                <p><a href="#">Via Roberto Lepetit 3<br>20121 Milano (MI), Italia</a></p>
+                <h3 class="ico-email">Email</h3>
+                <p><a href="mailto:rosanna.tesoro@virgilio.it">rosanna.tesoro@virgilio.it</a></p> 
+              
              </div>
-             <div class="blocco-email">
+             <!-- <div class="blocco-email">
+                <h3 class="ico-follow">Follow me</h3>
+                 <div class="blocco-contatti-social">
+                    <a href="#"><img src="src/img/ico-fb.svg" alt=""></a>
+                    <a href="#"><img src="src/img/ico-insta.svg" alt=""></a>
+                 </div>
+             </div> -->
+          </div>
+         
+        </div>
+        <div class="block-contatti-colonna block-contatti-colonna-piena">
+            <div class="blocco-social">
                 <h3 class="ico-follow">Follow me</h3>
                  <div class="blocco-contatti-social">
                     <a href="#"><img src="src/img/ico-fb.svg" alt=""></a>
                     <a href="#"><img src="src/img/ico-insta.svg" alt=""></a>
                  </div>
              </div>
-          </div>
         </div>
+        
     </div>
 </section> 
 
@@ -68,7 +88,8 @@
         <h2>Complila il modulo</h2>
         <p>Contattami per informazioni o per prenotazioni dirette</p>
         <div class="container-form">
-        <form class="mio-form" action="./dati.php" method="post">
+            
+        <form class="mio-form" action="./recupera" method="post">
             <label for="nome">Il tuo nome *</label>
             <input type="text" id="nome" name="nome" required>
             <label for="email">Email *</label>
@@ -78,10 +99,12 @@
             <label for="testo">Raccontami qualcosa di più</label>
             <textarea name="testoTextarea" id="testo" name="testo"></textarea>
             <div class="container-checkbox">
-                <input type="checkbox" name="" id="consensoDati" required>
+                <input type="checkbox" name="consensoDati" id="consensoDati" required>
                 <p>Utilizzando questo modulo accetti l'archiviazione e la gestione dei tuoi dati da questo sito web ai sensi dell'art. 13 del Regolamento 2016/679 (GDPR). *</p>
             </div>
+            <div id="html_element" class="g-recaptcha"></div>
             <input id="invia-form" type="submit" value="INVIA">
+          
         </form>
         </div>
     </div>
@@ -339,6 +362,7 @@
     <div id="colonna-menu-20" class="menu-colonna-20-chiuso"></div> <!-- assolute -->
     <div id="colonna-menu-80" class="menu-colonna-80-chiuso"></div> <!-- assolute -->
 </section>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 <script src="src/js/contatti.js"></script>
 </body>
 </html>

@@ -105,6 +105,10 @@ patLogoFooter.forEach(function(elemento) {
 // ------------ animazione footer
 
 
+//------------------------ form
+
+
+
 let divAvvisoModuloInviato = null;
 
 let mioForm = document.querySelector('.mio-form');
@@ -115,7 +119,7 @@ console.log(mioForm);
 let titoloContatti = document.querySelector('#titolo-contatti')
 
 mioForm.addEventListener('submit', function(){
-
+    
     divAvvisoModuloInviato = document.createElement('div');
     titoloContatti.after(divAvvisoModuloInviato);
     let testoAvviso = document.createElement('p');
@@ -133,7 +137,7 @@ document.body.addEventListener('click', function(){
 
 
 
-
+//------------------------ form
 
 
 

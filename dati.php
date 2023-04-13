@@ -1,9 +1,13 @@
 
 <?php
 
- 
 
-if (isset($_POST['nome']) && isset($_POST['email'])) {
+
+
+
+  if (isset($_POST['nome']) && isset($_POST['email'])) {
+       
+
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     if(isset($_POST['telefono'])){
@@ -16,8 +20,8 @@ if (isset($_POST['nome']) && isset($_POST['email'])) {
     } else {
         $testo = 'nessun contenuto';
     }
-   
-
+  
+      
     $emailMessaggio = "
     <html>
       <head>
@@ -38,12 +42,25 @@ if (isset($_POST['nome']) && isset($_POST['email'])) {
     $headers[] = 'Content-type: text/html; charset=utf-8';
 
     mail('manaweb.milano@gmail.com', 'Messaggio dal form sito web', $emailMessaggio, implode("\r\n", $headers));
+  
     
 }
 
-header("location: ./contatti.html");
+
+
+
+
 
 ?>
+
+
+<script language="javascript">
+document.location.href="./contatti.html";
+</script>
+
+// header("location: ./contatti.html");
+
+
 
 
 
