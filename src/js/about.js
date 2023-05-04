@@ -106,7 +106,7 @@ window.addEventListener('scroll', function(){
 //  --------animazione header
 
 
-
+ 
 // ----------link
 
 let linkHomeToContact = document.querySelector('#link-home-to-contact');

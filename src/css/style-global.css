@@ -275,6 +275,7 @@ transition: all 0.25s;
 .font-title-menu {
     font-size: 15px;
     color: #1F1F1F;
+    margin-bottom: 0px!important;
 }
 
 #svg-hambu {
@@ -598,6 +599,11 @@ transition: all 300ms;
 
 }
 
+#nav-mega a:hover {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
 .sottolineaSi::after{
     content: "";
     display: block;
@@ -664,6 +670,7 @@ transition: all 300ms;
 color: #fff;
 font-size: 14px;
 font-weight: 300;
+margin-bottom: 0px!important;
 }
 .dettagli-contatto-abs {
     position: absolute;
@@ -683,6 +690,7 @@ font-weight: 300;
   }
   .container-dettagli-contatto a:hover {
     text-decoration: underline;
+    color: #fff!important;
   }
   .container-dettagli-contatto {
     display: flex;
@@ -1002,6 +1010,7 @@ text-decoration: none;
 }
 .section-footer-riga2 a:hover {
     text-decoration: underline;
+    color: #fff!important;
 }
 .section-footer-riga3 p {
     font-weight: 400;
@@ -1021,6 +1030,7 @@ font-size: 12px;
 }
 .section-footer-riga3 a:hover {
     text-decoration: underline;
+    color: #fff!important;
 }
 
 .svg-triangolo-footer {

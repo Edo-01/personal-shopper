@@ -2,18 +2,10 @@
 
 let elemLogo = document.querySelector('#elem-logo');
 
-document.addEventListener('DOMContentLoaded', function() {
-    elemLogo.classList.add('logo-end');
-    
-})
 
 
-let imgUnoHome = document.querySelector('#img-1-home');
 
-document.addEventListener('DOMContentLoaded', function() {
-    imgUnoHome.classList.add('copertura-vuota');
-    
-})
+
 
  
 // --------menu dropdown
@@ -55,39 +47,6 @@ closeMenuDrop.addEventListener('click', function(e){
 
 // ----------menu dropdown
 
-//  --------carosello marchi
-
-
-let muoviDxCaroselloMarchi = document.querySelector('#muovi-dx-marchi');
-let muoviSxCaroselloMarchi = document.querySelector('#muovi-sx-marchi');
-let caroselloMarchi = document.querySelector('#carosello-marchi');
-
-muoviDxCaroselloMarchi.addEventListener('click', function(){
-    
-    caroselloMarchi.scrollBy({top:0, left:100,behavior:'smooth'});
-})
-muoviSxCaroselloMarchi.addEventListener('click', function(){
-    caroselloMarchi.scrollBy({top:0, left:-100,behavior:'smooth'});
-})
-
-//  --------carosello marchi
-
-//  --------carosello servizi
-
-
-let muoviDxSliderHome = document.querySelector('#freccia-slider-home-dx');
-let muoviSxSliderHome = document.querySelector('#freccia-slider-home-sx');
-let sliderHome = document.querySelector('#carosello-home-servizi');
-
-muoviDxSliderHome.addEventListener('click', function(){
-    
-    sliderHome.scrollBy({top:0, left:100,behavior:'smooth'});
-})
-muoviSxSliderHome.addEventListener('click', function(){
-    sliderHome.scrollBy({top:0, left:-100,behavior:'smooth'});
-})
-
-//  --------carosello servizi
 
 
 
@@ -130,46 +89,7 @@ window.addEventListener('scroll', function(){
 
 
 
-// ----------link
  
-
-let linkChiSonoDaHome = document.querySelector('#botton-home-chi-sono');
-
-linkChiSonoDaHome.addEventListener('click', function(){
-    location.href = './about.html';
-})
-
-let linkHomeToContact = document.querySelector('#link-home-to-contact');
-
-linkHomeToContact.addEventListener('click', function(){
-    location.href = './contatti.html';
-})
-
-let linkHomeToPersonal = document.querySelector('#servizo-personal-sh');
-let linkHomeToGuardaroba = document.querySelector('#servizio-guardaroba');
-let linkHomeToImmagine = document.querySelector('#servizio-immagine');
-let linkHomeToVolto = document.querySelector('#servizio-volto');
-
-linkHomeToPersonal.addEventListener('click', function(){
-    location.href = './servizi/personal-shopping.html';
-})
-linkHomeToGuardaroba.addEventListener('click', function(){
-    location.href = './servizi/styling-guardaroba.html';
-})
-linkHomeToImmagine.addEventListener('click', function(){
-    location.href = './servizi/consulenza-immagine.html';
-})
-linkHomeToVolto.addEventListener('click', function(){
-    location.href = './servizi/styling-del-volto.html';
-})
-
-
-// ----------link
-
-
-
-
-
 
 
 // ------------ animazione footer
@@ -196,12 +116,13 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 
+
 let navMega = document.querySelectorAll('#nav-mega h2');  //tutti i h2 del menu desk 
 let linkMenu = document.querySelectorAll('#nav-mega a'); //tutti gli A del menu desk 
 let paginaCorrente = window.location.href;
 
 console.log(paginaCorrente)
-console.log(linkMenu[6].href)
+console.log(linkMenu[0].href)
 
 for (let i = 0; i < navMega.length; i++) {
   if(paginaCorrente == linkMenu[i].href) {
